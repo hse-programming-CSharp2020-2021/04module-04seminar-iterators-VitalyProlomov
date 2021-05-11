@@ -49,7 +49,7 @@ namespace Task01
                 return null;
             fibonacci.Add(a);
             fibonacci.Add(b);
-            while (a + b < maxValue)
+            while (a + b <= maxValue)
             {
                 fibonacci.Add(a + b);
                 a = b;
