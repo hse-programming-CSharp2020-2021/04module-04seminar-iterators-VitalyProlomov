@@ -70,10 +70,14 @@ namespace Task02
                 try
                 {
                     string[] values = Console.ReadLine().Split();
+                    
                     if (startingIndex > values.Length)
                         throw new ArgumentException();
                     foreach (string ob in new IteratorSample(values, startingIndex))
+                    {
+                        if (ob != " " && ob != "" )
                         Console.Write(ob + " ");
+                    }
                     Console.WriteLine();
                 }
                 catch (Exception)
