@@ -65,7 +65,7 @@ namespace Task02
         {
             try
             {
-                if (!int.TryParse(Console.ReadLine(), out int startingIndex))
+                if (!int.TryParse(Console.ReadLine(), out int startingIndex) || startingIndex <=0)
                     throw new ArgumentException();
                 try
                 {
