@@ -90,7 +90,7 @@ namespace Task03
 
         public override string ToString()
         {
-            return $"{lastName} {firstName.ToUpper()[0]}.";
+            return $"{lastName.ToUpper()[0]}{lastName.Substring(1,lastName.Length-1)} {firstName.ToUpper()[0]}.";
         }
     }
 
